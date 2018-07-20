@@ -6,7 +6,13 @@
         {{> scripts}}
     </head>
     <body>
-        <h1>TODO:</h1>
-        {{todo}}
+        <h1>{{pageTitle}}</h1>
+        <ul>
+            {{#each titles}}
+                <li class="post-title">
+                    <span>{{this}}</span>
+                </li>
+            {{/each}}
+        </ul>
     </body>
 </html>
