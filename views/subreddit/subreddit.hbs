@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+    {{> header}}
+    <body>
+        <main class="ra-content-container">
+            <body>
+                <h1 class="ra-c-page-title">Results for {{pageTitle}}</h1>
+                <div class="ra-c-data-container">
+                    <span class="ra-c-data__title">
+                        Average age of posts:
+                    </span>
+                    <span class="ra-c-data__body">
+                        {{averageAge}} hour(s)
+                    </span>
+                </div>
+                <div class="ra-c-data-container">
+                    <span class="ra-c-data__title">
+                        Average comment count:
+                    </span>
+                    <span class="ra-c-data__body">
+                        {{averageComments}}
+                    </span>
+                </div>
+                <div class="ra-c-data-container">
+                    <span class="ra-c-data__title">
+                        Average upvote count:
+                    </span>
+                    <span class="ra-c-data__body">
+                        {{averageUpvotes}}
+                    </span>
+                </div>
+            </body>
+        </main>
+    </body>
+</html>

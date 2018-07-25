@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Reddit Analyzer</title>
-        {{> scripts}}
-    </head>
+<!doctype html>
+<html class="no-js" lang="">
+    {{> header}}
     <body>
-        <h1>{{pageTitle}}</h1>
-        <ul>
-            {{#each titles}}
-                <li class="post-title">
-                    <span>{{this}}</span>
-                </li>
-            {{/each}}
-        </ul>
+        <main class="ra-content-container">  
+            <h1 class="ra-c-page-title">{{pageTitle}}</h1>
+            <div calss="ra-c-form">
+                <form method="get" action="/sub">
+                    <div class="ra-c-form__field">
+                        <input type="text" name="subreddit" placeholder="Enter sub here..." />
+                    </div>
+                    <div class="ra-c-form__button-container">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </body>
 </html>
