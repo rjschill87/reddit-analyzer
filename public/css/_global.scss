@@ -3,3 +3,18 @@
   flex-direction: column;
   align-items: center;
 }
+
+.ra-c-section {
+  border: 1px solid $brand-primary;
+  padding: rem($space-xs) rem($space-med) rem($space-med);
+  margin: rem($space-sm);
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow-darker;
+  }
+}
+
+.ra-font-white {
+  color: white;
+}

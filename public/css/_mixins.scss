@@ -7,3 +7,24 @@
 @function em($pixels, $context: 16px) {
 	@return #{$pixels/$context}em;
 }
+
+@mixin placeholderStyles {
+  font-family: $font-family-base;
+}
+
+@mixin inputStyles {
+	background-color: #fff;
+	padding: rem(7px) rem(15px);
+	border: 1px solid $color-gray4;
+	font-family: $font-family-base;
+	font-size: rem($font-size-sm);
+	color: $color-gray1;
+	border-radius: rem($border-radius-sm);
+	width: 100%;
+	height: rem($space-med);
+	transition: all 0.15s linear;
+
+	&:focus {
+		outline: none;
+	}
+}

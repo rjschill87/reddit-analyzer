@@ -46,6 +46,13 @@ $state-danger-text: #b94a48;
 $state-danger-bg: #f2dede;
 $state-danger-border: #e0b1b8;
 
+// Assorted Colors
+// -------------------------
+$color-gray0: #37474f;
+$color-gray1: #5f6c72;
+$color-gray2: #879195;
+$color-gray3: #afb5b9;
+$color-gray4: #c3c7ca;
 
 // Navbar
 // -------------------------
@@ -61,9 +68,17 @@ $card-spacer-x: 0.75rem;
 $space-lg: 60px;
 $space-med: 30px;
 $space-sm: 15px;
+$space-xs: 8px;
 
 // Font sizing
 // -------------------------
 $font-size-lg: 60px;
 $font-size-med: 30px;
-$font-size-sm: 15px;
+$font-size-sm: 16px;
+
+// Box Shadow
+// -------------------------
+$box-shadow-default: 0 rem(1px) rem(3px) 0 rgba($color-gray0, 0.09);
+$box-shadow-darker: 0 rem(3px) rem(9px) 0 rgba($color-gray0, 0.18);
+
+$border-radius-sm: 3px;

@@ -1,0 +1,18 @@
+.ra-c-data-container {
+  background-color: $brand-primary;
+  border: 1px solid $brand-info;
+  padding: rem($space-sm);
+
+  > *:not(:last-child) {
+    margin-bottom: rem($space-xs);
+  }
+}
+
+.ra-c-data-card {
+  font-family: $font-family-base;
+  padding: rem($space-xs);
+}
+
+.ra-c-card__title {
+  font-size: rem($font-size-sm);
+}

@@ -1,0 +1,29 @@
+.ra-c-form__button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ra-c-form__button {
+  padding: rem($space-xs);
+  margin: rem($space-xs);
+  font-family: $font-family-base;
+  -webkit-appearance: none;
+  font-size: rem($font-size-sm);
+  transition: all 0.15s ease-in-out;
+
+  &-primary {
+    color: white;
+    background-color: $brand-primary;
+    border: 1px solid $btn-primary-border;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-default;
+    transform: scale(1.1);
+  }
+}
+
+input {
+  @include placeholderStyles;
+  @include inputStyles;
+}
