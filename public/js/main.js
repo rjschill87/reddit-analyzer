@@ -1,5 +1,4 @@
 $(document).ready(() => {
-
-  // Place JavaScript code here...
-
+  const socket = io();
+  socket.emit('page.loaded', {message: 'page loaded'});
 });
