@@ -1,7 +1,8 @@
-.ra-c-data-container {
+.ra-c-data__header {
   background-color: $brand-primary;
-  border: 1px solid $brand-info;
+  border-radius: $border-radius-sm;
   padding: rem($space-sm);
+  margin-bottom: rem($space-sm);
 
   > *:not(:last-child) {
     margin-bottom: rem($space-xs);
@@ -15,4 +16,19 @@
 
 .ra-c-card__title {
   font-size: rem($font-size-sm);
+}
+
+.ra-c-post {
+  padding: rem($space-xs) rem($space-med);
+  border: 1px solid $color-gray4;
+  border-radius: $border-radius-sm;
+  transition: all 0.15s ease-in-out;
+
+  &:not(:last-child) {
+    margin-bottom: rem($space-xs);
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-darker;
+  }
 }

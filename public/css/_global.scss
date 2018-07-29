@@ -6,13 +6,10 @@
 
 .ra-c-section {
   border: 1px solid $brand-primary;
+  border-radius: $border-radius-sm;
   padding: rem($space-xs) rem($space-med) rem($space-med);
   margin: rem($space-sm);
-  transition: all 0.15s ease-in-out;
 
-  &:hover {
-    box-shadow: $box-shadow-darker;
-  }
 }
 
 .ra-font-white {

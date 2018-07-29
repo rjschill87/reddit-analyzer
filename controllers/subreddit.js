@@ -19,7 +19,8 @@ exports.index = (req, res) => {
       pageTitle: `r/${subreddit}`,
       averageComments,
       averageUpvotes,
-      averageAge
+      averageAge,
+      posts: results.postArr
     });
   });
 };

@@ -6,31 +6,54 @@
         <main class="ra-content-container">
             <section class="ra-c-section">
                 <div class="ra-c-data-card">
-                    <h1 class="ra-c-page-title">Results for {{pageTitle}}</h1>
+                    <h1 class="ra-c-page-title">Results for {{pageTitle}}'s rising posts</h1>
                     <div class="ra-c-data-container">
-                        <div class="ra-c-card-stat">
-                            <span class="ra-c-card__title">
-                                Average age of posts:
-                            </span>
-                            <span class="ra-c-card__body">
-                                {{averageAge}} hour(s)
-                            </span>
+                        <div class="ra-c-data__header">
+                            <div class="ra-c-card-stat">
+                                <span class="ra-c-card__title">
+                                    Average age of posts:
+                                </span>
+                                <span class="ra-c-card__body">
+                                    {{averageAge}} hour(s)
+                                </span>
+                            </div>
+                            <div class="ra-c-card-stat">
+                                <span class="ra-c-card__title">
+                                    Average comment count:
+                                </span>
+                                <span class="ra-c-card__body">
+                                    {{averageComments}}
+                                </span>
+                            </div>
+                            <div class="ra-c-card-stat">
+                                <span class="ra-c-card__title">
+                                    Average upvote count:
+                                </span>
+                                <span class="ra-c-data__body">
+                                    {{averageUpvotes}}
+                                </span>
+                            </div>
                         </div>
-                        <div class="ra-c-card-stat">
-                            <span class="ra-c-card__title">
-                                Average comment count:
-                            </span>
-                            <span class="ra-c-card__body">
-                                {{averageComments}}
-                            </span>
-                        </div>
-                        <div class="ra-c-card-stat">
-                            <span class="ra-c-card__title">
-                                Average upvote count:
-                            </span>
-                            <span class="ra-c-data__body">
-                                {{averageUpvotes}}
-                            </span>
+                        <div class="ra-c-data__body">
+                            <div class="ra-c-post-container">
+                            {{#each posts}}
+                                <div class="ra-c-post" id="{{this.id}}" data-timestamp="{{this.prevTimestamp}}" data-upvotes="{{this.prevUpvotes}}">
+                                    <div class="ra-c-post__header">
+                                        <a href="{{this.link}}">
+                                            {{this.title}}
+                                        </a>
+                                    </div>
+                                    <div class="ra-c-post__body">
+                                        <div class="ra-c-post__title">
+                                            Age: {{this.age}} hour(s)
+                                        </div>
+                                        <div class="ra-c-post__title">
+                                            Upvotes per Minute: <span class="ra-c-post-info js-ra-vote-avg">{{this.upvotesPerMinute}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                            </div>
                         </div>
                     </div>
                 </div>
