@@ -1,3 +1,8 @@
+.ra-c-form {
+  display: flex;
+  justify-content: center;
+}
+
 .ra-c-form__button-container {
   display: flex;
   justify-content: center;
@@ -18,8 +23,7 @@
   }
 
   &:hover {
-    box-shadow: $box-shadow-default;
-    transform: scale(1.1);
+    box-shadow: $box-shadow-darker;
   }
 }
 

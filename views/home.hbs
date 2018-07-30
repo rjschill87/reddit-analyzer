@@ -3,17 +3,19 @@
     {{> head}}
     {{> header}}
     <body>
-        <main class="ra-content-container">  
-            <h1 class="ra-c-page-title">{{pageTitle}}</h1>
-            <div calss="ra-c-form">
-                <form method="get" action="/sub">
-                    <div class="ra-c-form__field">
-                        <input type="text" name="subreddit" placeholder="Enter sub here..." />
-                    </div>
-                    <div class="ra-c-form__button-container">
-                        <button class="ra-c-form__button ra-c-form__button-primary btn" type="submit">Submit</button>
-                    </div>
-                </form>
+        <main class="ra-content-container">
+            <div class="ra-c-form-container ra-c-card">
+                <h1 class="ra-c-page-title">{{pageTitle}}</h1>
+                <div class="ra-c-form">
+                    <form method="get" action="/sub">
+                        <div class="ra-c-form__field">
+                            <input type="text" name="subreddit" placeholder="Enter sub here..." />
+                        </div>
+                        <div class="ra-c-form__button-container">
+                            <button class="ra-c-form__button ra-c-form__button-primary btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
     </body>

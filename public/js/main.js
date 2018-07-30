@@ -15,8 +15,8 @@ function getNewVotesData() {
     const $post = $(el);
     const postData = {
       id: $post.attr('id'),
-      timestamp: $post.data('timestamp'),
-      upvotes: $post.data('upvotes')
+      timestamp: $post.attr('data-timestamp'),
+      upvotes: $post.attr('data-upvotes')
     };
 
     postArr.push(postData);
@@ -35,8 +35,8 @@ function updateVoteData(postArray) {
     const $postEl = $('#' + post.id);
     const $voteAvg = $postEl.find('.js-ra-vote-avg');
 
-    $postEl.data('timestamp', post.timestamp);
-    $postEl.data('upvotes', post.upvotes);
+    $postEl.attr('data-timestamp', post.timestamp);
+    $postEl.attr('data-upvotes', post.upvotes);
     $voteAvg.text(post.upvotesPerMinute);
   }
 }

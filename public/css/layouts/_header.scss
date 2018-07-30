@@ -1,9 +1,12 @@
 .ra-c-header__container {
-  background-color: $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+  box-shadow: $box-shadow-default;
   padding: em($space-med);
+  background-color: $color-white;
 }
 
 .ra-c-header__text {
-  font-size: rem($font-size-med);
+  font-size: rem($font-size-lg);
   font-family: $headings-font-family;
+  color: $brand-primary;
 }

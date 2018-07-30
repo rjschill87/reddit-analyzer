@@ -1,11 +1,20 @@
 .ra-c-data__header {
-  background-color: $brand-primary;
+  background-color: $color-white;
+  padding: rem($space-xs) rem($space-med);
+  border: 1px solid $color-gray4;
   border-radius: $border-radius-sm;
-  padding: rem($space-sm);
-  margin-bottom: rem($space-sm);
+  transition: all 0.15s ease-in-out;
 
-  > *:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: rem($space-xs);
+  }
+
+  >*:last-child {
+    margin-bottom: rem($space-xs);
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-darker;
   }
 }
 
@@ -18,7 +27,8 @@
   font-size: rem($font-size-sm);
 }
 
-.ra-c-post {
+.ra-c-card {
+  background-color: $color-white;
   padding: rem($space-xs) rem($space-med);
   border: 1px solid $color-gray4;
   border-radius: $border-radius-sm;
@@ -30,5 +40,28 @@
 
   &:hover {
     box-shadow: $box-shadow-darker;
+  }
+}
+
+.ra-c-card__header {
+  padding-bottom: rem($space-xs);
+}
+
+.ra-c-card__header-link {
+  color: $brand-primary;
+  font-size: $font-size-med;
+}
+
+.ra-c-card__header-subtitle {
+  font-size: $font-size-xxs;
+  color: $color-gray3;
+}
+
+.ra-c-card__title {
+  font-size: $font-size-xs;
+  color: $color-gray2;
+
+  &:not(:last-child) {
+    margin-bottom: rem(3px);
   }
 }

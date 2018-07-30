@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: rem($space-med);
+  height: 100%;
 }
 
 .ra-c-section {
-  border: 1px solid $brand-primary;
-  border-radius: $border-radius-sm;
   padding: rem($space-xs) rem($space-med) rem($space-med);
   margin: rem($space-sm);
 
@@ -14,4 +14,9 @@
 
 .ra-font-white {
   color: white;
+}
+
+.ra-c-page-title {
+  color: $brand-primary;
+  margin: rem($space-xs) 0;
 }
